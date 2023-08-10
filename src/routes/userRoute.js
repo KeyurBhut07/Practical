@@ -5,7 +5,10 @@ const user = require('../validation/userValidation')
 const router = express.Router()
 
 
-router.post("/register" , validate(user) ,usercontroller.rigister)
+router.post("/create-user" , validate(user) ,usercontroller.createUser)
+
+router.post("/login" , usercontroller.login)
+
 
 
 module.exports = router

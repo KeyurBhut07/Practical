@@ -1,0 +1,14 @@
+{
+    "failRegister" : "Email Already Registered",
+    "successRegister" : "User Create Successfully",
+    "loginSuccess" : "Login Successfully",
+    "userNotFound" : "User Not Found",
+    "invalidPassword" : "Invalid Password",
+    "invalidCredentials" : "Invalid Credentials",
+    "enterCredentials" : "Enter Your Credentials",
+    "notRegistered" : "Email is Not Registered",
+    "login" : "Please Login",
+    "unAuthenticated" : "You are not authorized to access this resource",
+    "pageNotFound" : "Page Not Found 404 Error",
+    "projectCreate" : "Project Create Successfully"
+}

@@ -32,3 +32,12 @@ exports.validationError = (err,res) => {
         message : err,
     })
 }
+
+
+exports.pageNotFound = (es) => {
+    return res.status(statusCode.pageNotFound).json({
+        status : statusCode.pageNotFound,
+        success : false,
+        message : res.message,
+    })
+}

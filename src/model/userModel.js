@@ -1,19 +1,20 @@
 const mongoose = require('mongoose');
+const authService = require('../auth/authPassword');
 
 const userSchema = new mongoose.Schema({
-    firstName : String,
-    lastName : String,
+    name : String,
     email : String,
     password : String,
-    mobileNumber : String,
+    phone : String,
     gender : String,
-    salary : String,
+    position : String,
+    dob : String,
     city : String,
     state : String,
     country : String,
     zipCode : String,
-    hobby : String,
     isActive : Boolean,
+    role :  String,
     tokens:[
         {
             token : {
@@ -22,7 +23,16 @@ const userSchema = new mongoose.Schema({
             }
         }
     ],
+},{
+    timestamps : true,
 })
+
+userSchema.pre('save',async function (next) {
+    const user = this
+    user.password = await authService.hashPassword(user.password)
+    next()
+})
+
 
 const userModel = mongoose.model('User', userSchema);
 

@@ -1,0 +1,45 @@
+Project Setup:
+
+= > Model 
+1. User
+    name,phone,email,gender,password,city,state,country,zipcode,isActive,position,dob, roles,
+    projectName, ProjectId , cretaeBy, updateBy timestamp
+2. Project
+    name , code , description , cretaeBy , updateBy
+3. Daily update
+    date , title , description , userId
+
+= > Api List
+
+1. Admin 
+    user create
+    Project - CRUD
+    Dashboard
+        - userCount
+        - projectCount
+
+2. Users
+    user Update,View
+    forget pass . change pass
+    Dashboard 
+        - filter
+        - Add Report
+        - delete report
+        - update report
+        - total daily update
+
+3 Daily Report
+    report - create, update , delete report
+
+4. Filter and Search
+
+
+
+Test Cases
+    
+Other Service : 
+    Middleware
+    OTP Service
+    Localization
+    Logger
+    Response Service
